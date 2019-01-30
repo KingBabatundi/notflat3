@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'hk-grotesk-bold';
+    src: url('hk-grotesk/hkgrotesk_bold.eot');
+    src: url('hk-grotesk/hkgrotesk_bold.eot?#iefix') format('embedded-opentype'),
+         url('hk-grotesk/hkgrotesk_bold.woff') format('woff'),
+         url('hk-grotesk/hkgrotesk_bold.ttf') format('truetype'),
+         url('hk-grotesk/hkgrotesk_bold.svg#hk-grotesk-bold') format('svg');
+}
+
+@font-face {
+    font-family: 'hk-grotesk-regular';
+    src: url('hk-grotesk/hkgrotesk_regular.eot');
+    src: url('hk-grotesk/hkgrotesk_regular.eot?#iefix') format('embedded-opentype'),
+         url('hk-grotesk/hkgrotesk_regular.woff') format('woff'),
+         url('hk-grotesk/hkgrotesk_regular.ttf') format('truetype'),
+         url('hk-grotesk/hkgrotesk_regular.svg#hk-grotesk-regular') format('svg');
+}
+
