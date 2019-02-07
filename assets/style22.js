@@ -152,37 +152,47 @@ $(".projects ul li:nth-child(1)").on({
   /* Project-description/name toggle */
 
 function displayProjectDescription(imageid) {
-
-  var projectDescriptionDivId= "#"+1+imageid;
-  $(projectDescriptionDivId).toggleClass('current');
+for( i = 0; i < 3; i++){
+  var projectDescriptionDivId= "#"++imageid;
+    $(projectDescriptionDivId).toggleClass('current');
+  }
 }
+//   var projectDescriptionDivId= "#"+1+imageid;
+//   $(projectDescriptionDivId).toggleClass('current');
+// }
 
-function displayProjectName(imageid) {
+// function displayProjectName(imageid) {
 
-  var projectNameDivId= "#"+2+imageid;
-  $(projectNameDivId).toggleClass('current');
-}
+//   var projectNameDivId= "#"+2+imageid;
+//   $(projectNameDivId).toggleClass('current');
+// }
 
-function displayProjectSlide(imageid) {
+// function displayProjectSlide(imageid) {
 
-  var projectSlideDivId= "#"+3+imageid;
-  $(projectSlideDivId).toggleClass('current');
+//   var projectSlideDivId= "#"+3+imageid;
+//   $(projectSlideDivId).toggleClass('current');
 
-}
+// }
 
 function turnOffMany(arrayOfIds) {
 
+number = arrayOfIds.length;
+    let newArr = [];
+    for ( i = 0; i <= number ; i++ ) {
+      newArr.push(i < 10 ? ("0" + i) : i);
+    }
+    console.log(newArr);
+
 for (var id in arrayOfIds) {
  // alert("turningoff["+arrayOfIds[id]+"]")
-
- var projectDescriptionDivId= "#"+1+arrayOfIds[id];
+ var projectDescriptionDivId= "#"+10+arrayOfIds[id];
   $(projectDescriptionDivId).removeClass('current');
 
-  var projectNameDivId= "#"+2+arrayOfIds[id];
+  var projectNameDivId= "#"+20+arrayOfIds[id];
   $(projectNameDivId).removeClass('current');
   
 
-  var projectSlideDivId= "#"+3+arrayOfIds[id];
+  var projectSlideDivId= "#"+30+arrayOfIds[id];
   $(projectSlideDivId).removeClass('current');
 //  alert("completedturningoff["+arrayOfIds[id]+"]")
  }
@@ -375,7 +385,7 @@ $(".closer-journal").on({
     $('.jonathan .left').toggleClass('off');
     $('.jonathan .padder').removeClass('noncurrent');
     $('.jonathan .journal-entries').toggleClass('current');
-    turnOffMany([01,02,03,04,05,06,07,08,09,10,11,12,13,14,15,16]);   
+    turnOffMany([1,2,3,4,5,6,7,8,9,10,11,12,13]);   
     $(".bold").removeClass('bold');
     $(".pause").removeClass('pause');
     $(".active").removeClass('active');
@@ -392,7 +402,7 @@ $(".journal-list ul li .title").on({
       scrollTop: 0
    }, 450);
     console.log("PAUSE:"+this.className);
-    turnOffMany([01,02,03,04,05,06,07,08,09,10,11,12,13,14,15,16]);
+    turnOffMany([1,2,3,4,5,6,7,8,9,10,11,12,13]);
     $(".bold").removeClass('bold')
     $(this).parent().parent().siblings().children().children().removeClass('true').removeClass('active').addClass('pause');
     $(this).toggleClass('active').addClass('true').removeClass('pause');
@@ -413,7 +423,7 @@ $(".journal-list ul li .title").on({
     $('.jonathan .left').toggleClass('off');
     $('.jonathan .padder').toggleClass('noncurrent');
     $('.jonathan .journal-entries').toggleClass('current');
-    turnOffMany([01,02,03,04,05,06,07,08,09,10,11,12,13,14,15,16]);   
+    turnOffMany([1,2,3,4,5,6,7,8,9,10,11,12,13]);   
     $(".bold").removeClass('bold');
     $(".pause").removeClass('pause');
     $(".active").removeClass('active');
@@ -436,7 +446,7 @@ $(".journal-list ul li .title").on({
     $('.jonathan .left').toggleClass('off');
     $('.jonathan .padder').toggleClass('noncurrent');
     $('.jonathan .journal-entries').toggleClass('current');
-    turnOffMany([01,02,03,04,05,06,07,08,09,10,11,11,13,14,15,16]);
+    turnOffMany([1,2,3,4,5,6,7,8,9,10,11,12,13]);
     displayProjectDescription(this.id);
     displayProjectSlide(this.id);
     $(this).parent().parent().children().children().removeClass('pause');
@@ -622,7 +632,7 @@ function offsetAnchor() {
     $('.jonathan .left').toggleClass('off');
     $('.jonathan .padder').toggleClass('noncurrent');
     $('.jonathan .journal-entries').toggleClass('current');
-    turnOffMany([1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]);
+    turnOffMany([1,2,3,4,5,6,7,8,9,10,11,12,13]);
     $("#302").toggleClass('current');
     $("#102").toggleClass('current');
     $('#identitytheft').parent().parent().parent().children().children().removeClass('pause');
@@ -654,7 +664,7 @@ function offsetAnchor2() {
     $('.jonathan .left').toggleClass('off');
     $('.jonathan .padder').toggleClass('noncurrent');
     $('.jonathan .journal-entries').toggleClass('current');
-    turnOffMany([1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]);
+    turnOffMany([1,2,3,4,5,6,7,8,9,10,11,12,13]);
     $("#303").toggleClass('current');
     $("#103").toggleClass('current');
     $('#disclaimer').parent().parent().parent().children().children().removeClass('pause');
@@ -664,15 +674,39 @@ function offsetAnchor2() {
  }
 }
 
-$(document).on('h4[id^="#disclaimer"]', function() {
+// Opens Peter Hall Interview as jump link
+$(document).on('h4[id^="#peterhall"]', function() {
   window.setTimeout(function() {
-    offsetAnchor2();
+    offsetAnchor3();
   }, 0);
 });
+
+function offsetAnchor3() {
+  if (window.location.hash == '#peterhall') {
+    $('#peterhall').parent().parent().parent().siblings().children().children().addClass('pause');
+    $('#peterhall').parent().toggleClass('active');
+    $('#peterhall').parent().children().addClass('bold');
+    $('#peterhall').parent().parent().parent().children().children().addClass('bold');
+    $('#peterhall').parent().next().toggleClass('current').toggleClass('true');
+    $('#peterhall').parent().next().children().addClass('bold');
+    
+    $('.jonathan .left').toggleClass('off');
+    $('.jonathan .padder').toggleClass('noncurrent');
+    $('.jonathan .journal-entries').toggleClass('current');
+    turnOffMany([1,2,3,4,5,6,7,8,9,10,11,12,13]);
+    $("#309").toggleClass('current');
+    $("#109").toggleClass('current');
+    $('#peterhall').parent().parent().parent().children().children().removeClass('pause');
+
+    $(".closer-journal").slideToggle(500);
+    window.clearTimeout(offsetAnchor);
+ }
+}
 
 // Set the offset when entering page with hash present in the url
 window.setTimeout(offsetAnchor, 0);
 window.setTimeout(offsetAnchor2, 0);
+window.setTimeout(offsetAnchor3, 0);
 
 /* Nada */
 
@@ -728,7 +762,7 @@ $(".slideshows-return").on({
     $('.slideshows').fadeOut(1000);
     $('.ella-name').toggleClass('off');
     $('.ella-description').toggleClass('off');
-    turnOffMany([1,2,3,4,5]);
+    turnOffMany([1,2,3,4,5,]);
   }
 });
 
