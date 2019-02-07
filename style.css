@@ -1373,7 +1373,7 @@ content: "sources & footnotes";
 }
 
  .journal-list ul {
-    counter-reset: section 9;                     /* Set a counter named 'section', and its initial value is 0. */
+    counter-reset: section 20;                     /* Set a counter named 'section', and its initial value is 0. */
   }
 
  .sources  {
