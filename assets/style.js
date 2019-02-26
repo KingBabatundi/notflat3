@@ -372,7 +372,7 @@ $(".closer-journal").on({
     $('.jonathan .left').toggleClass('off');
     $('.jonathan .padder').removeClass('noncurrent');
     $('.jonathan .journal-entries').toggleClass('current');
-    turnOffMany(["01","02","03","04","05","06","07","08","09","10","11","12","13","14"]);
+    turnOffMany(["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15"]);
     $(".bold").removeClass('bold');
     $(".pause").removeClass('pause');
     $(".active").removeClass('active');
@@ -389,7 +389,7 @@ $(".journal-list ul li .title").on({
         scrollTop: 0
       }, 450);
       console.log("PAUSE:" + this.className);
-      turnOffMany(["01","02","03","04","05","06","07","08","09","10","11","12","13","14"]);
+      turnOffMany(["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15"]);
       $(".bold").removeClass('bold')
       $(this).parent().parent().siblings().children().children().removeClass('true').removeClass('active').addClass('pause');
       $(this).toggleClass('active').addClass('true').removeClass('pause');
@@ -409,7 +409,7 @@ $(".journal-list ul li .title").on({
       $('.jonathan .left').toggleClass('off');
       $('.jonathan .padder').toggleClass('noncurrent');
       $('.jonathan .journal-entries').toggleClass('current');
-      turnOffMany(["01","02","03","04","05","06","07","08","09","10","11","12","13","14"]);
+      turnOffMany(["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15"]);
       $(".bold").removeClass('bold');
       $(".pause").removeClass('pause');
       $(".active").removeClass('active');
@@ -432,7 +432,7 @@ $(".journal-list ul li .title").on({
       $('.jonathan .left').toggleClass('off');
       $('.jonathan .padder').toggleClass('noncurrent');
       $('.jonathan .journal-entries').toggleClass('current');
-      turnOffMany(["01","02","03","04","05","06","07","08","09","10","11","12","13","14"]);
+      turnOffMany(["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15"]);
       displayProjectDescription(this.id);
       $(this).parent().parent().children().children().removeClass('pause');
 
@@ -616,7 +616,7 @@ function offsetAnchor() {
     $('.jonathan .left').toggleClass('off');
     $('.jonathan .padder').toggleClass('noncurrent');
     $('.jonathan .journal-entries').toggleClass('current');
-    turnOffMany(["01","02","03","04","05","06","07","08","09","10","11","12","13","14"]);
+    turnOffMany(["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15"]);
     $("#302").toggleClass('current');
     $("#102").toggleClass('current');
     $('#identitytheft').parent().parent().parent().children().children().removeClass('pause');
@@ -648,7 +648,7 @@ function offsetAnchor2() {
     $('.jonathan .left').toggleClass('off');
     $('.jonathan .padder').toggleClass('noncurrent');
     $('.jonathan .journal-entries').toggleClass('current');
-    turnOffMany(["01","02","03","04","05","06","07","08","09","10","11","12","13","14"]);
+    turnOffMany(["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15"]);
     $("#303").toggleClass('current');
     $("#103").toggleClass('current');
     $('#disclaimer').parent().parent().parent().children().children().removeClass('pause');
@@ -677,7 +677,7 @@ function offsetAnchor3() {
     $('.jonathan .left').toggleClass('off');
     $('.jonathan .padder').toggleClass('noncurrent');
     $('.jonathan .journal-entries').toggleClass('current');
-    turnOffMany(["01","02","03","04","05","06","07","08","09","10","11","12","13","14"]);
+    turnOffMany(["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15"]);
     $("#309").toggleClass('current');
     $("#109").toggleClass('current');
     $('#peterhall').parent().parent().parent().children().children().removeClass('pause');
