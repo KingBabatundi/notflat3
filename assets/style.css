@@ -1516,6 +1516,11 @@ content: "sources & footnotes";
     right: 15vw;
  }
 
+.closer-journal {
+    top: 7;
+    right: 5%;
+}
+
 .right-runner h4, .left-runner h4 {
     padding-top: 2;
     font-size: 1.15em;
@@ -1531,6 +1536,7 @@ content: "sources & footnotes";
 .list { 
     width: 93%;
     position: absolute;
+    height: 100vh;
     z-index: -1;
     margin: 0 0.7rem 0 0.7rem;
 }
@@ -1538,11 +1544,21 @@ content: "sources & footnotes";
 .journal-entries {
     border-top: 1px solid white;
     display: block;
+    top: -1;
+    margin-left: 5;
     width: 100%;
 }
 
+.full-height {
+    position: absolute;
+    left: 0;
+    width: 20%;
+    top: 0;
+    height: 100%;
+}
+
 .jonathan-journal .journal-list h4{
-    font-size: 14px;
+    font-size: 15px;
 }
 
 .guide-leftportfolio h4 {
