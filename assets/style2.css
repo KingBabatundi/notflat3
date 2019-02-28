@@ -1509,11 +1509,11 @@ content: "sources & footnotes";
 
   .left-runner {
     position: fixed;
-    left: 45vw;
+    left: 52vw;
  }
   .right-runner {
     position: fixed;
-    right: 15vw;
+    right: 5vw;
  }
 
 .right-runner h4, .left-runner h4 {
@@ -1524,19 +1524,11 @@ content: "sources & footnotes";
     display: none;
 }
 
-.jonathan-journal .col-xs-6.left, .jonathan-journal .col-xs-4.info, .expander-journal {
-    display: none;
+.jonathan-journal .col-xs-6.right, .jonathan-journal .col-xs-4.info, .journal-list .number, .journal-list .date, .expander-journal, .closer-journal {
+    display: none!important;
 }
 
-.list { 
-    width: 93%;
-    position: absolute;
-    z-index: -1;
-    margin: 0 0.7rem 0 0.7rem;
-}
-
-.journal-entries {
-    border-top: 1px solid white;
+.journal-entries, .journal-list .heading {
     display: block;
     width: 100%;
 }
