@@ -1542,8 +1542,8 @@ content: "sources & footnotes";
 }
 
 .journal-entries {
-    border-top: 1px solid white;
     display: block;
+    overflow-x: hidden;
     top: -1;
     margin-left: 5;
     width: 100%;
@@ -1568,6 +1568,11 @@ content: "sources & footnotes";
 .jonathan h4 {
     font-size: 15.5px;
 }
+
+.journal-entries h4 {
+    font-size: 16.5px;
+}
+
 
 .button.guide-left {
     top: 70vh;
