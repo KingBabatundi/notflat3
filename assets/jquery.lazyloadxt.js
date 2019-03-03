@@ -1,9 +1,10 @@
-/*! Lazy Load XT v1.1.0 2016-01-12
- * http://ressio.github.io/lazy-load-xt
- * (C) 2016 RESS.io
- * Licensed under MIT */
+/*jslint browser:true, plusplus:true, vars:true */
+/*jshint browser:true, jquery:true */
+/*jshint -W040:false */ /* to don't alert on "this" in triggerLoadOrError */
 
 (function ($, window, document, undefined) {
+    'use strict';
+
     // options
     var lazyLoadXT = 'lazyLoadXT',
         dataLazied = 'lazied',

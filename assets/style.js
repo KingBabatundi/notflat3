@@ -4,7 +4,6 @@ function displayProjectDescription(imageid) {
   var projectDescriptionDivId = "#1" + imageid + ", #2" + imageid + ", #3" + imageid; // "#101, #201"
   $(projectDescriptionDivId).toggleClass('current');
 }
-
 // function turnOffMany(arrayofIds) {
 //   for (var id in arrayOfIds) {
 //   var projectDescriptionDivId = "#1" + arrayofIds[id] + ", #2" + arrayofIds[id] + ", #3" + arrayofIds[id]; // "#101, #201"
@@ -14,8 +13,6 @@ function displayProjectDescription(imageid) {
 
 
 var main = function () {
-
-
 
   $(document).ready(function () {
     $('body').removeClass('preload');
@@ -41,10 +38,12 @@ var main = function () {
       1800);
   });
 
+
   $(".slide-carousel ul li").on({
     click: function () {
+      $(this).next().children().lazyLoadXT({show: true});
       $(this).removeClass('current');
-      $(this).next().addClass('current');
+      $(this).next().addClass('current');     
     }
   });
 
@@ -312,7 +311,7 @@ $(".jonathan-portfolio").on("mousemove", function (event) {
     $('.circle').css("background", "#fff");
   }
   else {
-    $('.guide-leftportfolio').css("opacity", "0.06");
+    $('.guide-leftportfolio').css("opacity", "0.05");
     $('.guide-leftportfolio').show();
     $('.circle').css("z-index", "-3");
     $('.circle').css("background", "none");
@@ -327,7 +326,7 @@ $(".jonathan-journal").on("mousemove", function (event) {
     $('.circle').css("background", "#fff");
   }
   else {
-    $('.guide-rightjournal').css("opacity", "0.06");
+    $('.guide-rightjournal').css("opacity", "0.05");
     $('.guide-rightjournal').show();
     $('.circle').css("z-index", "-3");
     $('.circle').css("background", "none");
