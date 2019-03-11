@@ -38,10 +38,14 @@ var main = function () {
       1800);
   });
 
+  $(".slide-carousel ul li").on({
+    click: function () {
+      $(this).siblings().children('img[data-src]').lazyLoadXT({show: true}); 
+    }
+  });
 
   $(".slide-carousel ul li").on({
     click: function () {
-      $(this).next().children().lazyLoadXT({show: true});
       $(this).removeClass('current');
       $(this).next().addClass('current');     
     }
