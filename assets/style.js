@@ -308,7 +308,7 @@ window.setInterval(function () {
 //}); 
 
 $(".jonathan-portfolio").on("mousemove", function (event) {
-  if (event.pageX / $(document).width() > 0.95) {
+  if (event.pageX / $(document).width() > 0.96) {
     $('.guide-leftportfolio').css("opacity", "1");
     $('.guide-leftportfolio').show();
     $('.circle').css("z-index", "99");
@@ -323,7 +323,7 @@ $(".jonathan-portfolio").on("mousemove", function (event) {
 });
 
 $(".jonathan-journal").on("mousemove", function (event) {
-  if (event.pageX / $(document).width() < 0.05) {
+  if (event.pageX / $(document).width() < 0.04) {
     $('.guide-rightjournal').css("opacity", "1");
     $('.guide-rightjournal').show();
     $('.circle').css("z-index", "99");
@@ -375,7 +375,7 @@ $(".closer-journal").on({
     $('.jonathan .left').toggleClass('off');
     $('.jonathan .padder').removeClass('noncurrent');
     $('.jonathan .journal-entries').toggleClass('current');
-    turnOffMany(["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15"]);
+    turnOffMany(["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18"]);
     $(".bold").removeClass('bold');
     $(".pause").removeClass('pause');
     $(".active").removeClass('active');
@@ -392,7 +392,7 @@ $(".journal-list ul li .title").on({
         scrollTop: 0
       }, 450);
       console.log("PAUSE:" + this.className);
-      turnOffMany(["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15"]);
+      turnOffMany(["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18"]);
       $(".bold").removeClass('bold')
       $(this).parent().parent().siblings().children().children().removeClass('true').removeClass('active').addClass('pause');
       $(this).toggleClass('active').addClass('true').removeClass('pause');
@@ -412,7 +412,7 @@ $(".journal-list ul li .title").on({
       $('.jonathan .left').toggleClass('off');
       $('.jonathan .padder').toggleClass('noncurrent');
       $('.jonathan .journal-entries').toggleClass('current');
-      turnOffMany(["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15"]);
+      turnOffMany(["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18"]);
       $(".bold").removeClass('bold');
       $(".pause").removeClass('pause');
       $(".active").removeClass('active');
@@ -435,7 +435,7 @@ $(".journal-list ul li .title").on({
       $('.jonathan .left').toggleClass('off');
       $('.jonathan .padder').toggleClass('noncurrent');
       $('.jonathan .journal-entries').toggleClass('current');
-      turnOffMany(["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15"]);
+      turnOffMany(["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18"]);
       displayProjectDescription(this.id);
       $(this).parent().parent().children().children().removeClass('pause');
 
@@ -453,7 +453,7 @@ $(function () {
   }).resize();//trigger the event manually when the page is loaded
 })
 
-$('.next-entry').on({
+$('.previous-entry').on({
   click: function () {
     $('.left').animate({
       scrollTop: 0
@@ -478,7 +478,7 @@ $('.next-entry').on({
   }
 });
 
-$('.previous-entry').on({
+$('.next-entry').on({
   click: function () {
     $('.left').animate({
       scrollTop: 0
@@ -619,7 +619,7 @@ function offsetAnchor() {
     $('.jonathan .left').toggleClass('off');
     $('.jonathan .padder').toggleClass('noncurrent');
     $('.jonathan .journal-entries').toggleClass('current');
-    turnOffMany(["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15"]);
+    turnOffMany(["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18"]);
     $("#302").toggleClass('current');
     $("#102").toggleClass('current');
     $('#identitytheft').parent().parent().parent().children().children().removeClass('pause');
@@ -651,7 +651,7 @@ function offsetAnchor2() {
     $('.jonathan .left').toggleClass('off');
     $('.jonathan .padder').toggleClass('noncurrent');
     $('.jonathan .journal-entries').toggleClass('current');
-    turnOffMany(["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15"]);
+    turnOffMany(["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18"]);
     $("#303").toggleClass('current');
     $("#103").toggleClass('current');
     $('#disclaimer').parent().parent().parent().children().children().removeClass('pause');
@@ -680,7 +680,7 @@ function offsetAnchor3() {
     $('.jonathan .left').toggleClass('off');
     $('.jonathan .padder').toggleClass('noncurrent');
     $('.jonathan .journal-entries').toggleClass('current');
-    turnOffMany(["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15"]);
+    turnOffMany(["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18"]);
     $("#309").toggleClass('current');
     $("#109").toggleClass('current');
     $('#peterhall').parent().parent().parent().children().children().removeClass('pause');
