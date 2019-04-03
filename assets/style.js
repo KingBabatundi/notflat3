@@ -690,10 +690,100 @@ function offsetAnchor3() {
   }
 }
 
+// Opens Chris Moody Interview as jump link
+$(document).on('h4[id^="#chrismoody"]', function () {
+  window.setTimeout(function () {
+    offsetAnchor4();
+  }, 0);
+});
+
+function offsetAnchor4() {
+  if (window.location.hash == '#chrismoody') {
+    $('#chrismoody').parent().parent().parent().siblings().children().children().addClass('pause');
+    $('#chrismoody').parent().toggleClass('active');
+    $('#chrismoody').parent().children().addClass('bold');
+    $('#chrismoody').parent().parent().parent().children().children().addClass('bold');
+    $('#chrismoody').parent().next().toggleClass('current').toggleClass('true');
+    $('#chrismoody').parent().next().children().addClass('bold');
+
+    $('.jonathan .left').toggleClass('off');
+    $('.jonathan .padder').toggleClass('noncurrent');
+    $('.jonathan .journal-entries').toggleClass('current');
+    turnOffMany(["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18"]);
+    $("#311").toggleClass('current');
+    $("#111").toggleClass('current');
+    $('#chrismoody').parent().parent().parent().children().children().removeClass('pause');
+
+    $(".closer-journal").slideToggle(500);
+    window.clearTimeout(offsetAnchor);
+  }
+}
+
+// Opens Luke Powell Interview as jump link
+$(document).on('h4[id^="#lukepowell"]', function () {
+  window.setTimeout(function () {
+    offsetAnchor5();
+  }, 0);
+});
+
+function offsetAnchor5() {
+  if (window.location.hash == '#lukepowell') {
+    $('#lukepowell').parent().parent().parent().siblings().children().children().addClass('pause');
+    $('#lukepowell').parent().toggleClass('active');
+    $('#lukepowell').parent().children().addClass('bold');
+    $('#lukepowell').parent().parent().parent().children().children().addClass('bold');
+    $('#lukepowell').parent().next().toggleClass('current').toggleClass('true');
+    $('#lukepowell').parent().next().children().addClass('bold');
+
+    $('.jonathan .left').toggleClass('off');
+    $('.jonathan .padder').toggleClass('noncurrent');
+    $('.jonathan .journal-entries').toggleClass('current');
+    turnOffMany(["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18"]);
+    $("#315").toggleClass('current');
+    $("#115").toggleClass('current');
+    $('#lukepowell').parent().parent().parent().children().children().removeClass('pause');
+
+    $(".closer-journal").slideToggle(500);
+    window.clearTimeout(offsetAnchor);
+  }
+}
+
+// Opens Ben Vickers Interview as jump link
+$(document).on('h4[id^="#benvickers"]', function () {
+  window.setTimeout(function () {
+    offsetAnchor6();
+  }, 0);
+});
+
+function offsetAnchor6() {
+  if (window.location.hash == '#benvickers') {
+    $('#benvickers').parent().parent().parent().siblings().children().children().addClass('pause');
+    $('#benvickers').parent().toggleClass('active');
+    $('#benvickers').parent().children().addClass('bold');
+    $('#benvickers').parent().parent().parent().children().children().addClass('bold');
+    $('#benvickers').parent().next().toggleClass('current').toggleClass('true');
+    $('#benvickers').parent().next().children().addClass('bold');
+
+    $('.jonathan .left').toggleClass('off');
+    $('.jonathan .padder').toggleClass('noncurrent');
+    $('.jonathan .journal-entries').toggleClass('current');
+    turnOffMany(["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18"]);
+    $("#318").toggleClass('current');
+    $("#118").toggleClass('current');
+    $('#benvickers').parent().parent().parent().children().children().removeClass('pause');
+
+    $(".closer-journal").slideToggle(500);
+    window.clearTimeout(offsetAnchor);
+  }
+}
+
 // Set the offset when entering page with hash present in the url
-window.setTimeout(offsetAnchor, 0);
-window.setTimeout(offsetAnchor2, 0);
-window.setTimeout(offsetAnchor3, 0);
+window.setTimeout(offsetAnchor, 500);
+window.setTimeout(offsetAnchor2, 500);
+window.setTimeout(offsetAnchor3, 500);
+window.setTimeout(offsetAnchor4, 500);
+window.setTimeout(offsetAnchor5, 500);
+window.setTimeout(offsetAnchor6, 500);
 
 /* Nada */
 
@@ -747,7 +837,6 @@ $(".slideshows-return").on({
     turnOffMany("01","02", "03", "04", "05");
   }
 });
-
 
 
 $(document).ready(main);   
