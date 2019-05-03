@@ -375,7 +375,7 @@ $(".closer-journal").on({
     $('.jonathan .left').toggleClass('off');
     $('.jonathan .padder').removeClass('noncurrent');
     $('.jonathan .journal-entries').toggleClass('current');
-    turnOffMany(["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18"]);
+    turnOffMany(["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20"]);
     $(".bold").removeClass('bold');
     $(".pause").removeClass('pause');
     $(".active").removeClass('active');
@@ -392,7 +392,7 @@ $(".journal-list ul li .title").on({
         scrollTop: 0
       }, 450);
       console.log("PAUSE:" + this.className);
-      turnOffMany(["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18"]);
+      turnOffMany(["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20"]);
       $(".bold").removeClass('bold')
       $(this).parent().parent().siblings().children().children().removeClass('true').removeClass('active').addClass('pause');
       $(this).toggleClass('active').addClass('true').removeClass('pause');
@@ -412,7 +412,7 @@ $(".journal-list ul li .title").on({
       $('.jonathan .left').toggleClass('off');
       $('.jonathan .padder').toggleClass('noncurrent');
       $('.jonathan .journal-entries').toggleClass('current');
-      turnOffMany(["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18"]);
+      turnOffMany(["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20"]);
       $(".bold").removeClass('bold');
       $(".pause").removeClass('pause');
       $(".active").removeClass('active');
@@ -435,7 +435,7 @@ $(".journal-list ul li .title").on({
       $('.jonathan .left').toggleClass('off');
       $('.jonathan .padder').toggleClass('noncurrent');
       $('.jonathan .journal-entries').toggleClass('current');
-      turnOffMany(["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18"]);
+      turnOffMany(["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20"]);
       displayProjectDescription(this.id);
       $(this).parent().parent().children().children().removeClass('pause');
 
@@ -483,8 +483,9 @@ $('.next-entry').on({
     $('.left').animate({
       scrollTop: 0
     }, 250);
-    $(this).parent().parent().parent().parent().toggleClass('current');
-    $(this).parent().parent().parent().parent().prev().toggleClass('current');
+    $(this).parent().parent().parent().parent().parent().toggleClass('current');
+    $(this).parent().parent().parent().parent().parent().prev().toggleClass('current');
+  
     $('.tags').removeClass('current');
 
     $('.slide.title.active').parent().parent().prev().addClass('selected1');
@@ -619,7 +620,7 @@ function offsetAnchor() {
     $('.jonathan .left').toggleClass('off');
     $('.jonathan .padder').toggleClass('noncurrent');
     $('.jonathan .journal-entries').toggleClass('current');
-    turnOffMany(["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18"]);
+    turnOffMany(["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20"]);
     $("#302").toggleClass('current');
     $("#102").toggleClass('current');
     $('#identitytheft').parent().parent().parent().children().children().removeClass('pause');
@@ -651,7 +652,7 @@ function offsetAnchor2() {
     $('.jonathan .left').toggleClass('off');
     $('.jonathan .padder').toggleClass('noncurrent');
     $('.jonathan .journal-entries').toggleClass('current');
-    turnOffMany(["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18"]);
+    turnOffMany(["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20"]);
     $("#303").toggleClass('current');
     $("#103").toggleClass('current');
     $('#disclaimer').parent().parent().parent().children().children().removeClass('pause');
@@ -680,7 +681,7 @@ function offsetAnchor3() {
     $('.jonathan .left').toggleClass('off');
     $('.jonathan .padder').toggleClass('noncurrent');
     $('.jonathan .journal-entries').toggleClass('current');
-    turnOffMany(["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18"]);
+    turnOffMany(["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20"]);
     $("#309").toggleClass('current');
     $("#109").toggleClass('current');
     $('#peterhall').parent().parent().parent().children().children().removeClass('pause');
@@ -709,7 +710,7 @@ function offsetAnchor4() {
     $('.jonathan .left').toggleClass('off');
     $('.jonathan .padder').toggleClass('noncurrent');
     $('.jonathan .journal-entries').toggleClass('current');
-    turnOffMany(["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18"]);
+    turnOffMany(["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20"]);
     $("#311").toggleClass('current');
     $("#111").toggleClass('current');
     $('#chrismoody').parent().parent().parent().children().children().removeClass('pause');
@@ -738,7 +739,7 @@ function offsetAnchor5() {
     $('.jonathan .left').toggleClass('off');
     $('.jonathan .padder').toggleClass('noncurrent');
     $('.jonathan .journal-entries').toggleClass('current');
-    turnOffMany(["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18"]);
+    turnOffMany(["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20"]);
     $("#315").toggleClass('current');
     $("#115").toggleClass('current');
     $('#lukepowell').parent().parent().parent().children().children().removeClass('pause');
@@ -747,13 +748,6 @@ function offsetAnchor5() {
     window.clearTimeout(offsetAnchor);
   }
 }
-
-// Opens Ben Vickers Interview as jump link
-$(document).on('h4[id^="#benvickers"]', function () {
-  window.setTimeout(function () {
-    offsetAnchor6();
-  }, 0);
-});
 
 function offsetAnchor6() {
   if (window.location.hash == '#benvickers') {
@@ -767,10 +761,75 @@ function offsetAnchor6() {
     $('.jonathan .left').toggleClass('off');
     $('.jonathan .padder').toggleClass('noncurrent');
     $('.jonathan .journal-entries').toggleClass('current');
-    turnOffMany(["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18"]);
+    turnOffMany(["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20"]);
     $("#318").toggleClass('current');
     $("#118").toggleClass('current');
     $('#benvickers').parent().parent().parent().children().children().removeClass('pause');
+
+    $(".closer-journal").slideToggle(500);
+    window.clearTimeout(offsetAnchor);
+  }
+}
+
+// Opens Ben Vickers Interview as jump link
+$(document).on('h4[id^="#benvickers"]', function () {
+  window.setTimeout(function () {
+    offsetAnchor6();
+  }, 0);
+});
+
+// Opens Astrid Stavro Interview as jump link
+$(document).on('h4[id^="#astridstavro"]', function () {
+  window.setTimeout(function () {
+    offsetAnchor7();
+  }, 0);
+});
+
+function offsetAnchor7() {
+  if (window.location.hash == '#astridstavro') {
+    $('#astridstavro').parent().parent().parent().siblings().children().children().addClass('pause');
+    $('#astridstavro').parent().toggleClass('active');
+    $('#astridstavro').parent().children().addClass('bold');
+    $('#astridstavro').parent().parent().parent().children().children().addClass('bold');
+    $('#astridstavro').parent().next().toggleClass('current').toggleClass('true');
+    $('#astridstavro').parent().next().children().addClass('bold');
+
+    $('.jonathan .left').toggleClass('off');
+    $('.jonathan .padder').toggleClass('noncurrent');
+    $('.jonathan .journal-entries').toggleClass('current');
+    turnOffMany(["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20"]);
+    $("#319").toggleClass('current');
+    $("#119").toggleClass('current');
+    $('#astridstavro').parent().parent().parent().children().children().removeClass('pause');
+
+    $(".closer-journal").slideToggle(500);
+    window.clearTimeout(offsetAnchor);
+  }
+}
+
+// Opens Astrid Stavro Interview as jump link
+$(document).on('h4[id^="#paulaustin"]', function () {
+  window.setTimeout(function () {
+    offsetAnchor8();
+  }, 0);
+});
+
+function offsetAnchor8() {
+  if (window.location.hash == '#paulaustin') {
+    $('#paulaustin').parent().parent().parent().siblings().children().children().addClass('pause');
+    $('#paulaustin').parent().toggleClass('active');
+    $('#paulaustin').parent().children().addClass('bold');
+    $('#paulaustin').parent().parent().parent().children().children().addClass('bold');
+    $('#paulaustin').parent().next().toggleClass('current').toggleClass('true');
+    $('#paulaustin').parent().next().children().addClass('bold');
+
+    $('.jonathan .left').toggleClass('off');
+    $('.jonathan .padder').toggleClass('noncurrent');
+    $('.jonathan .journal-entries').toggleClass('current');
+    turnOffMany(["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20"]);
+    $("#320").toggleClass('current');
+    $("#120").toggleClass('current');
+    $('#paulaustin').parent().parent().parent().children().children().removeClass('pause');
 
     $(".closer-journal").slideToggle(500);
     window.clearTimeout(offsetAnchor);
@@ -784,6 +843,8 @@ window.setTimeout(offsetAnchor3, 500);
 window.setTimeout(offsetAnchor4, 500);
 window.setTimeout(offsetAnchor5, 500);
 window.setTimeout(offsetAnchor6, 500);
+window.setTimeout(offsetAnchor7, 500);
+window.setTimeout(offsetAnchor8, 500);
 
 /* Nada */
 

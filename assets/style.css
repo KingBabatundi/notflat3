@@ -1378,7 +1378,7 @@ content: "sources & footnotes";
 }
 
  .journal-list ul {
-    counter-reset: section 19;                     /* Set a counter named 'section' */
+    counter-reset: section 20;                     /* Set a counter named 'section' */
   }
 
  .sources  {
