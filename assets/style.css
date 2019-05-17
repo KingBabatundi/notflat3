@@ -593,6 +593,47 @@ div .otherpeople {
 NADA
 ————————————————————*/
 
+.nada.work p {
+    padding: 0 6;
+    margin: -2 ;
+}
+
+#nadatypes p {
+   text-align: center;
+}
+
+.nadagrid1 {
+    margin-top: 5px;
+    height: 4%;
+    width: 100%;
+    /* border-bottom: 1px dashed black; */
+}
+
+.nadagrid2 {
+    margin-top: 5px;
+    border-right: 1px dashed black;
+    text-align: left;
+    width: 32%!important
+}
+.nadagrid3 {
+    margin-top: 5px;
+    border-right: 1px dashed black;
+    text-align: right;
+    width: 32%!important
+}
+.nadagrid4 {
+    margin-top: 5px;
+    border-right: 1px dashed black;
+    width: 4%!important
+}   
+
+.nadagrid4 img {
+    object-fit: fill;
+    padding: 0 20%;
+    height: 100%;
+    width: 100%;
+}
+
 #menu {
     position: fixed;
     bottom: 0;
@@ -642,10 +683,15 @@ NADA
     height: 28vw;
 }
 
+.col-xs-10.primary {
+   
+    margin: 0 10%;
+}
+
 .authenticity-archive p {
     font-size: 1.4em;
     text-align: center;
-    margin: 15 90 65 90;
+    margin: 15 12% 65 12%;
 }
 
 .authenticity-archive h4 {
@@ -1378,7 +1424,7 @@ content: "sources & footnotes";
 }
 
  .journal-list ul {
-    counter-reset: section 20;                     /* Set a counter named 'section' */
+    counter-reset: section 21;                     /* Set a counter named 'section' */
   }
 
  .sources  {
@@ -1578,5 +1624,30 @@ content: "sources & footnotes";
     top: 70vh;
     left: 6vw; 
     }
+
+/* Nada */
+
+
+.col-xs-10.primary {
+    width: 100%!important;
+    margin: 0;
+}
+
+.authentictiy-archive .main {
+    width: 100%!important;
+    margin: 0;
+}
+.authenticity-archive p {
+    font-size: 1.4em;
+    text-align: left;
+    margin: 0;
+
+}
+.authenticity-archive h1 {
+        font-size: 2.6em;
+        text-align: left;
+        margin: 10 0;
+
+}
 
 }

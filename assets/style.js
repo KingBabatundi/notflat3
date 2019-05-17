@@ -453,6 +453,8 @@ $(function () {
   }).resize();//trigger the event manually when the page is loaded
 })
 
+
+
 $('.previous-entry').on({
   click: function () {
     $('.left').animate({
@@ -852,6 +854,16 @@ $(".menu-button").on({
   click: function () {
     $('#menu').slideToggle(800);
     $('.burger').toggleClass('burger-close');
+  }
+});
+
+
+$(".showthis").on({
+  mouseenter: function () {
+    $('#nadaimg').show();
+  },  
+  mouseleave: function () {
+    $('#nadaimg').hide();
   }
 });
 
