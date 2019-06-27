@@ -278,7 +278,7 @@ PROJECT INDEX, JONATHAN JOURNAL INDEX
 ———————————————————————————————————————*/
 
 .all-projects-page ul {
-    counter-reset: section 18;                     /* Set a counter named 'section', and its initial value is 0. */
+    counter-reset: section 19;                     /* Set a counter named 'section', and its initial value is 0. */
   }
   
  .all-projects-page #numbers:after {
@@ -575,8 +575,8 @@ div .otherpeople {
     display: none;
 }
 
-.slide-carousel img:hover {
-    cursor: url(malone.png), auto !important;
+.slide-carousel img:hover, .slide-carousel:hover, .slide-carousel video:hover {
+    cursor: url("artboard.png"), auto !important;
     z-index: 3;
     display: block !important;
 }
@@ -1409,7 +1409,7 @@ content: "sources & footnotes";
 }
 
 .maximise { 
-    width: 82%;
+    width: 80%;
     margin-right: auto;
     margin-left: auto;
 } 
