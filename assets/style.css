@@ -593,6 +593,8 @@ div .otherpeople {
 NADA
 ————————————————————*/
 
+
+
 .nada.work p {
     padding: 0 6;
     margin: -2 ;
@@ -602,32 +604,48 @@ NADA
    text-align: center;
 }
 
-.nadagrid1 {
+.nada.work .container {
+    margin-bottom: 24px; 
+}
+
+.nada.work .main.container {
+    width: 100%;
+    border-bottom: 1px dashed black;
+
+}
+
+.flex-container {
+    width: 100%;
+    display: flex;
+    border-bottom: 1px dashed black;
+}
+
+.nada-title-container {
     margin-top: 5px;
     height: 4%;
     width: 100%;
     /* border-bottom: 1px dashed black; */
 }
 
-.nadagrid2 {
+.nadagrid1, .nadagrid2, .nadagrid3, .nadagrid4 {
     margin-top: 5px;
     border-right: 1px dashed black;
     text-align: left;
-    width: 32%!important
+    width: 31%;
+    transition: 0.5s ease-in-out;
+    transition-delay: 0.2s;
+    -webkit-transition: 0.7s ease-in-out; 
 }
-.nadagrid3 {
-    margin-top: 5px;
-    border-right: 1px dashed black;
-    text-align: right;
-    width: 32%!important
-}
-.nadagrid4 {
-    margin-top: 5px;
-    border-right: 1px dashed black;
-    width: 4%!important
-}   
 
-.nadagrid4 img {
+.nadagrid4 {
+    margin-top: 0px;
+    width: 7%
+}
+
+.nadagrid4:hover {
+    width: 75%;
+}
+.nada-title-container img {
     object-fit: fill;
     padding: 0 20%;
     height: 100%;
@@ -668,7 +686,7 @@ NADA
 
 .nada .menu-button .burger:hover {
     color: red;
-    cursor: pointer;
+    cursor: crosshair;
 }
 
 .burger-close {
