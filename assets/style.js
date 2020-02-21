@@ -201,6 +201,15 @@ $(".authenticity-question").on({
   }
 });
 
+$(".nada .flex-container").on({
+  mouseenter: function () {
+    $('.nadagrid4master').css("width", "120%");
+  },
+  mouseleave: function () {
+    $('.nadagrid4master').css("width", "7%");
+  }
+});
+
 /* Jonathan */
 
 

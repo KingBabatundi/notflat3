@@ -634,17 +634,33 @@ NADA
     width: 31%;
     transition: 0.5s ease-in-out;
     transition-delay: 0.2s;
-    -webkit-transition: 0.7s ease-in-out; 
+    -webkit-transition: 0.55s ease-in-out; 
+}
+
+.nadagrid4master {
+    transition: 0.5s ease-in-out;
+    transition-delay: 0.2s;
+    -webkit-transition: 0.55s ease-in-out; 
 }
 
 .nadagrid4 {
+    position: relative;
     margin-top: 0px;
-    width: 7%
+    width: 7%;
 }
 
-.nadagrid4:hover {
-    width: 75%;
+.nadagrid4 img {
+    max-height: 100%;
+    object-fit: cover;
 }
+
+.nada .flex-container:hover > .nadagrid4 {
+    width: 120%;
+}
+
+/* .nadagrid4:hover {
+    width: 100%;
+} */
 .nada-title-container img {
     object-fit: fill;
     padding: 0 20%;
@@ -656,10 +672,11 @@ NADA
     position: fixed;
     bottom: 0;
     left: 0;
-    height: 65vh;
+    height: 45vh;
     background: #fff;
     display: none;
     align-content: center;
+    margin: 0 0 0 0;
 }
 
 #menu .items  {
