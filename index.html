@@ -31,7 +31,7 @@
 
     <div class="col-xs-12 navigation">
         <div> </div>
-        <div> <a href="info">Info</a> 
+        <div> <span style="font-style: italic;"><a href="index2">Information</a></span>
               <a href="projects">Projects</a>
         </div>     
        </div>
@@ -43,43 +43,26 @@
             <div class="container col-xs-5"> 
               <div class="container col-xs-12">
                     <div id="info-text">
-                        <p><span id="typed1"></span> <span id="typed2"></span> </p>
-                        <p><span id="typed3"></span> 
-                           <span id="typed4"></span> 
-                           <span id="typed5"></span> 
+                        <p><span id="typed1"></span> 
+                           <span id="typed2"></span></p>
+                        <p><span id="typed3"></span><br>
+                          <span id="typed4"></span></p>
+                           <!-- <span id="typed5"></span> 
                            <span id="typed6"></span>
-                           <span id="typed7"></span>
+                           <span id="typed7"></span> -->
                            <!-- <span id="typed8"></span>  -->
-                          </p>
+                          <!-- </p> -->
                         
                        
                     </div>
               </div>  
             </div>    
         <div class="col-xs-1"></div>
-        <video id="membervideodelay" width="60%" loop="true" muted>
+        <!-- <video id="membervideodelay" width="60%" loop="true" muted>
             <source src="media/OliverLaricVersions2.mp4" type="video/mp4" style="float: right">  
-        </video>  
-        <div class="container col-xs-4 member-gifs">
-          <ul>
-            <!-- <li class="gif">
-               <img src="https://kingbabatundi.github.io/notflat3/about/Test-Gif-Anna-Square-300px.gif"[attributes]/>
-            </li>
-            <li class="gif">
-                <img src="https://kingbabatundi.github.io/notflat3/about/Test-Gif-Nada-Square-300px.gif"[attributes]/>
-            </li>
-            <li class="gif">
-                <img src="https://kingbabatundi.github.io/notflat3/about/Test-Gif-Wei-Square-300px.gif"[attributes]/>
-            </li>
-            <li class="gif">
-                <img src="https://kingbabatundi.github.io/notflat3/about/Test-Gif-Jonathan-Square-300px.gif"[attributes]/>
-            </li>
-            <li class="gif">
-                <img src="https://kingbabatundi.github.io/notflat3/about/Test-Gif-Ella-Square-300px.gif"[attributes]/>
-            </li> -->
-          </ul>
-          
-        </div>
+        </video>   -->
+        <div class="container col-xs-4 member-gifs">        
+       </div>
         <div class="col-xs-3"></div>
          
     </div>
@@ -112,7 +95,7 @@
               // false = infinite
               loopCount: false,
               callback: function() {
-             $('#typed1').html('<a href="index2">' + $('#typed1').html() + '</a>');
+            //  $('#typed1').html('<a href="index2">' + $('#typed1').html() + '</a>');
              // $('#typed1').html('<a href="projects.html">' + $('#typed1').html() + '</a>');
 
               $('#typed1').next("span").css("animation", "none");
@@ -125,7 +108,7 @@
     $(function(){
           $("#typed2").typed({
             strings: [
-              "<br>A multi-disciplinary design community working across art direction,^100 illustration,^100 graphic design,^100 branding,^100 video and web^50/interactive design.<br><br>^600 This site serves two purposes: ^600 one as a collective platform for members to share, inspire and collaborate with each other ^600 and two^600 as a gateway to publically showcase and promote individual members' work. ", 
+              "<br>A multi-disciplinary design community working across art direction,^100 illustration,^100 graphic design,^100 branding,^100 video and web^50/interactive design.<br><br> ^600 Our structure and dynamism of co-operative and democratic working mean that we can tackle a huge range of disciplines, sharing ideas from different viewpoints, and encouraging clients to imaginative places far beyond the brief. ^100 <br><br> All members are independent practitioners exploring the concept of a modern design collective.<br><br> London,<br>United Kingdom</p>" , 
               ],
             typeSpeed: 0,
             startDelay: 2800,
@@ -143,7 +126,7 @@
          $(function(){
           $("#typed3").typed({
             strings: [
-              "<br> ^1500 Members<br>", 
+              "<br>instagram<br>", 
               ],
             typeSpeed: 0,
             startDelay: 20500,
@@ -154,6 +137,7 @@
               // false = infinite
               loopCount: false,
               callback: function() {
+              $('#typed3').html('<a href=""https://www.instagram.com/notflat3" target="_blank">' + $('#typed3').html() + '</a>');
               $('#typed3').next("span").css("animation", "none");
               $('#typed3').next("span").css("display", "none");
               
@@ -163,10 +147,10 @@
       $(function(){
           $("#typed4").typed({
             strings: [
-              '<br> ^2500 Ank','<br>Anna Sherik','<br>Anna Sheriakova' 
+              '^2500 ciao','<br>whatsup@','hello@notflat3.com' 
               ],
             typeSpeed: 1,
-            startDelay: 20000,
+            startDelay: 20500,
             backSpeed: 5,
             backDelay: 500,
              // loop
@@ -174,7 +158,7 @@
               // false = infinite
               loopCount: false,
               callback: function() {
-              $('#typed4').html('<a href="Anna">' + $('#typed4').html() + '</a>');
+              $('#typed4').html('<a href="mailto:hello@notflat3.com">' + $('#typed4').html() + '</a>');
             
               
               },
@@ -235,29 +219,6 @@
               },
           });
       });
-      $(function(){
-          $("#typed8").typed({
-            strings: [
-              "<br> ^4300 Emmanuel","<br>Ela","<br>Ella Okorom^1000adu", 
-              ],
-            typeSpeed: 3,
-            startDelay: 20000,
-            backSpeed: 5,
-            backDelay: 500,
-             // loop
-              loop: false,
-              // false = infinite
-              loopCount: false,
-              callback: function() {
-              $('#typed8').html('<a href="Ella.html">' + $('#typed8').html() + '</a>');
-              },
-          /*   callback: function () {
-              $(".typed-cursor" ).css( "animation", "none" );
-              $(".typed-cursor" ).css( "display", "none" );
-          }, */
-          });
-      });
-
   });
   </script>
   
